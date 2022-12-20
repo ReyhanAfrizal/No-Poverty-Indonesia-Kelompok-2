@@ -15,7 +15,8 @@ df = pd.read_excel(dataset_file, sheet_name=Sheet_name,
 provinsi = df[df["Wilayah"] != 'INDONESIA']
 indo = df[df["Wilayah"] == 'INDONESIA']
 indo.drop(columns='Wilayah')
-st.image(Image.open('map.png'))
+st.image(Image.open(
+    'D:/Naufal Rizqullah/Kuliah/Visdat/Project/No-Poverty-Indonesia-Kelompok-2/Visualisasi Data/map.png'))
 st.text('')
 st.text('')
 st.text('')
