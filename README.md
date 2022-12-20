@@ -22,4 +22,4 @@ Anggota:
 ![Rasio Gini](Visualisasi_Data/gini.png)
 
 **Garis Kemiskinan Makanan dan Non-Makanan Berdasarkan Provinsi**
-![garis kemiskinan](Visualisasi_Data/garis.png)
+![garis kemiskinan](Visualisasi_Data/garis kemiskinan.png)
