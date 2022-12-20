@@ -4,7 +4,7 @@ import plotly.express as px
 from PIL import Image
 
 
-st.set_page_config(page_title='No Poverty')
+st.set_page_config(page_title='Dashboard Statistic Angka Kemiskinan')
 st.subheader('DASHBOARD ANGKA KEMISKINAN DI INDONESIA')
 # data
 dataset_file = 'Data Final.xlsx'
