@@ -16,7 +16,7 @@ provinsi = df[df["Wilayah"] != 'INDONESIA']
 indo = df[df["Wilayah"] == 'INDONESIA']
 indo.drop(columns='Wilayah')
 st.image(Image.open(
-    'D:/Naufal Rizqullah/Kuliah/Visdat/Project/No-Poverty-Indonesia-Kelompok-2/Visualisasi Data/map.png'))
+    'D:/Naufal Rizqullah/Kuliah/Visdat/Project/No-Poverty-Indonesia-Kelompok-2/Visualisasi_Data/map.png'))
 st.text('')
 st.text('')
 st.text('')
