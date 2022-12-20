@@ -13,8 +13,17 @@ Sheet_name = 'Data Final'
 df = pd.read_excel(dataset_file, sheet_name=Sheet_name,
                    usecols='A:G', header=0)
 provinsi = df[df["Wilayah"] != 'INDONESIA']
-
+indo = df[df["Wilayah"] == 'INDONESIA']
+indo.drop(columns='Wilayah')
 st.image(Image.open('map.png'))
+st.text('')
+st.text('')
+st.text('')
+st.subheader('Jumlah Penduduk Miskin di Indonesia per Tahun')
+bar_chart = px.bar(indo,
+                   x='Tahun', y='Jumlah Penduduk Miskin (Ribu Jiwa)')
+st.plotly_chart(bar_chart)
+
 st.dataframe(provinsi)
 persentase_pend_miskin = px.line(provinsi, title='Persentase Penduduk Miskin di Indonesia Berdasarkan Provinsi',
                                  x='Tahun', y='Persentase Masyarakat Miskin', line_group='Wilayah', color='Wilayah',)
