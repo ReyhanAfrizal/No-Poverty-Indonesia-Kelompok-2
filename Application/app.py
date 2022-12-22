@@ -16,7 +16,7 @@ provinsi = df[df["Wilayah"] != 'INDONESIA']
 indo = df[df["Wilayah"] == 'INDONESIA']
 indo.drop(columns='Wilayah')
 st.image(Image.open(
-    'D:/Naufal Rizqullah/Kuliah/Visdat/Project/No-Poverty-Indonesia-Kelompok-2/Visualisasi_Data/map.png'))
+    '../Visualisasi_Data/map.png'))
 st.text('')
 st.text('')
 st.text('')
@@ -47,6 +47,6 @@ c2.plotly_chart(non_makan)
 
 st.text('Selengkapnya dapat mengunjungi link berikut:')
 linkgit = '[Github](https://github.com/ReyhanAfrizal/No-Poverty-Indonesia-Kelompok-2)'
-linkml = '[Machine Learning](https://colab.research.google.com/drive/1nZpc0ZWvQ3YgoGWufM5wxKHCXmJtqz7G?usp=share_link)'
+linkml = '[Machine Learning](https://github.com/ReyhanAfrizal/No-Poverty-Indonesia-Kelompok-2/blob/master/Tubes_Visdas_2.ipynb)'
 st.markdown(linkgit, unsafe_allow_html=True)
 st.markdown(linkml, unsafe_allow_html=True)
